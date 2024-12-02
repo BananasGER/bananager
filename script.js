@@ -11,3 +11,19 @@ function showPage(pageId) {
         selectedPage.style.display = 'block';
     }
 }
+
+function toggleMode() {
+    const body = document.body;
+    const button = document.getElementById('modeButton');
+    
+    // Toggle between dark and light mode classes
+    if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        button.textContent = '☀️ Light Mode'; // Button zeigt "Dark Mode"
+    } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        button.textContent = '🌙 Dark Mode'; // Button zeigt "Light Mode"
+    }
+}

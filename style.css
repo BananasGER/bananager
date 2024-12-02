@@ -1,3 +1,33 @@
+/* Standard Lightmode (Helles Design) */
+body.light-mode {
+    background-color: #ffffff; /* Heller Hintergrund */
+    color: #121212; /* Dunkle Schrift */
+}
+
+.light-mode header, 
+.light-mode nav, 
+.light-mode .table-container, 
+.light-mode .requirements-container,
+.light-mode footer {
+    background-color: #f5f5f5; /* Hellerer Hintergrund für diese Bereiche */
+    color: #333; /* Dunklere Schrift für diese Bereiche */
+}
+
+.light-mode a {
+    color: #0066cc; /* Blau für Links im Lightmode */
+}
+
+.light-mode th {
+    background-color: #0066cc; /* Blau für Tabellenkopf im Lightmode */
+}
+
+.light-mode td {
+    background-color: #f0f0f0; /* Hellgrau für Tabellenzellen */
+    color: #333; /* Dunkle Schrift */
+}
+
+/**/
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -364,12 +394,73 @@ img[src*="path-to-"]:not([src]) {
     transform: scale(0.98); /* Button wird bei Klick leicht verkleinert */
 }
 
- /**/
+ /* Contact Page */
+
+ /* Discord Name Styling */
+.discord-name {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Discord Button Styling */
+.discord-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #5865F2; /* Discord-Farbe */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.discord-btn:hover {
+    background-color: #4854c9;
+}
+
+/* IFrame Styling (Google Docs Formular) */
+iframe {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/**/
 
 footer {
     margin-top: 20px; /* Optional: Abstand über dem Footer */
     text-align: center; /* Optional: Footer zentrieren */
 }
+
+/* Light/Darkmode Button Styling */
+.mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#modeButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#modeButton:hover {
+    background-color: #45a049;
+}
+
+#modeButton:active {
+    transform: scale(0.95);
+}
+
+
+
 
 
 footer {
