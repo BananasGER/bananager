@@ -27,3 +27,15 @@ function toggleMode() {
         button.textContent = '🌙 Dark Mode'; // Button zeigt "Light Mode"
     }
 }
+
+// Funktion, um die Benachrichtigung anzuzeigen
+window.onload = function() {
+    // Benachrichtigung anzeigen
+    var notification = document.getElementById("notification");
+    notification.classList.add("show");
+
+    // Benachrichtigung nach 5 Sekunden automatisch verschwinden lassen
+    setTimeout(function() {
+        notification.classList.remove("show");
+    }, 10000); // 5000 Millisekunden = 5 Sekunden
+};
