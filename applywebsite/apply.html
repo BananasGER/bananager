@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbungsformular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="https://bananasger.github.io/bananager/" onclick="showPage('home')">Zurück</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Bewerbungsformular</h1>
+        <form id="applicationForm">
+
+            <label for="name">Echter Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dcname">Discord Name:</label>
+            <input type="text" id="dcname" name="dcname" required>
+
+            <label for="age">Alter:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="contact">E-Mail Adresse / Kontakt für die Antwort</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <h2>Allgemeine Befragung</h2>
+
+            <!-- Langantwort: Motivation -->
+            <label for="Q1">Was musst du als Moderator immer aufrecht erhalten?</label>
+            <textarea id="Q1" name="Q1" rows="4" required></textarea>
+
+            <label for="Q2">Warum möchtest du dich bewerben?</label>
+            <textarea id="Q2" name="Q2" rows="4" required></textarea>
+
+            <label for="Q3">Hast du schon erfahrung in der Moderation wenn ja, sage wo?</label>
+            <textarea id="Q3" name="Q3" rows="4" required></textarea>
+
+            <label for="Q4">Nenne mir 3 Stärken und 3 Schwächen</label>
+            <textarea id="Q4" name="Q4" rows="4" required></textarea>
+
+            <h2>Regelwerkabfrage</h2>
+
+            <!-- Multiple Choice: Erfahrung -->
+            <label>Ist es erlaubt einen 2. Account zu haben egal ob Discord oder Twitch?</label>
+            <select id="Q5" name="Q5" required>
+                <option value="Ja es spricht nichts dagegen.">Ja es spricht nichts dagegen.</option>
+                <option value="Nein es ist verboten.">Nein es ist verboten.</option>
+            </select>
+
+            <label>Was machst du wenn eine Person auf Twitch andere Streamer beleidigt / mobbt</label>
+            <select id="Q6" name="Q6" required>
+                <option value="Nichts, solange es dich nicht stört">Nichts, solange es dich nicht stört</option>
+                <option value="Die Person bannen, da wir alle zusammenhalten sollen als Streamer ✅">Die Person bannen, da wir alle zusammenhalten sollen als Streamer</option>
+            </select>
+
+            <label>Darf man Spammen?</label>
+            <select id="Q7" name="Q7" required>
+                <option value="Nein ist verboten">Nein ist verboten</option>
+                <option value="Ja ist in ordnung">Ja ist in ordnung</option>
+            </select>
+
+            <br>
+
+            <div id="rulequestion">
+                <label>Kreuze an was im Regelwerk steht.</label>
+                <br>
+                <br>
+                <label><input type="checkbox" name="O1" value="Man darf beleidigen"> Man darf beleidigen</label>
+                <br>
+                <label><input type="checkbox" name="O2" value="Echtgeldhandel ist nicht erlaubt"> Echtgeldhandel ist nicht erlaubt</label>
+                <br>
+                <label><input type="checkbox" name="O3" value="Beleidigen im Voice Channel ist nicht erlaubt"> Beleidigen im Voice Channel ist nicht erlaubt</label>
+                <br>
+                <label><input type="checkbox" name="O4" value="Dauerhaftes switchen der channels ist erlaubt"> Dauerhaftes switchen der channels ist erlaubt</label>
+                <br>
+                <label><input type="checkbox" name="O5" value="Sexistische Avatare sind nicht erlaubt"> Sexistische Avatare sind nicht erlaubt</label>
+            </div>
+
+            <h2>Situationsfragen</h2>
+
+            <label>Jemand im Ticket Support fängt an zu Beleidigen, da er genervt ist das du zu langsam bist. Wie gehst du vor?</label>
+            <select id="Q8" name="Q8" required>
+                <option value="Ich versuche ihn zu beruhigen und arbeite weiter">Ich versuche ihn zu beruhigen und arbeite weiter</option>
+                <option value="Ich bestrafe ihn für die Beleidigung">Ich bestrafe ihn für die Beleidigung</option>
+            </select>
+
+            <label>Jemand schickt im Öffentlichen Chats verstörende Bilder wie z.B. Gore wie gehst du vor?</label>
+            <select id="Q9" name="Q9" required>
+                <option value="Bild löschen und nichts weiteres machen">Bild löschen und nichts weiteres machen</option>
+                <option value="Warnen und Bild löschen">Warnen und Bild löschen</option>
+                <option value="Kicken und Bild löschen">Kicken und Bild löschen</option>
+                <option value="Bannen und Bild löschen">Bannen und Bild löschen</option>
+                <option value="Kicken">Kicken</option>
+                <option value="Bannen">Bannen</option>
+            </select>
+
+            <label>Jemand versucht dich zu Bestechen was machst du nun?</label>
+            <select id="Q10" name="Q10" required>
+                <option value="Ihn Muten für eine gewisse Zeit">Ihn Muten für eine gewisse Zeit</option>
+                <option value="Ihn Bestrafen aufgrund der Bestechung">Ihn Bestrafen aufgrund der Bestechung</option>
+            </select>
+
+            <label>Wie reagierst du wenn jemand über Direct Message gefragt wirst über Internes Zeug?</label>
+            <select id="Q11" name="Q11" required>
+                <option value="Person Bannen">Person Bannen</option>
+                <option value="Prson Kicken">Person Kicken</option>
+                <option value="Person Warnen">Person Warnen</option>
+                <option value="Person Warnen und Kicken">Person Warnen und Kicken</option>
+            </select>
+
+            <label for="Q12">Jemand ist nicht zufrienden mit dem was passiert ist und versucht mit dir über Direct Message zu Diskutieren wie gehst du vor?</label>
+            <textarea id="Q12" name="Q12" rows="4" required></textarea>
+
+            <label for="Q13">Ein anderer Moderator fängt an die Regeln zu brechen. Wie gehst du vor?</label>
+            <textarea id="Q13" name="Q13" rows="4" required></textarea>
+
+            <label for="Q14">Du bemerkst, dass ein Moderator jemanden übersehen hat, wie ein User die Regeln bricht. Wie gehst du vor??</label>
+            <textarea id="Q14" name="Q14" rows="4" required></textarea>
+
+            <button type="submit">Bewerbung absenden</button>
+        </form>
+    </div>
+    <script src="applyscript.js"></script>
+</body>
+</html>
