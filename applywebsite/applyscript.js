@@ -10,7 +10,7 @@ document.getElementById("applicationForm").addEventListener("submit", async func
         .join(", ") || "Keine Antworten";
 
 
-    const module = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMxNDM1NDA3ODAzNzU3MzY0Mi9USHRGeUczelJvS3lJaHdUNjJZaVNXeFRQU0xlTFVIMmw5NlE3dGVCS3ZzZXRCTW04MjQ2aDNuTlNjMU91aVgxX2tJTw==";
+    const module = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMxNjUxODI2MzMyNDQwOTkxNy9PNVE4UmM2aEM3X2xXM3F1bFBnRlRtS0JkNExDNlJNYTdvLUhGZVdOeV8zcE9BQVk2Wkhmak1KeWtyOGE1UThWeGREXw==";
     const fetchmodule = atob(module); 
 
     // Discord Webhook Payload
