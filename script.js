@@ -39,3 +39,21 @@ window.onload = function() {
         notification.classList.remove("show");
     }, 10000); // 5000 Millisekunden = 5 Sekunden
 };
+
+function toggleAccordion(id) {
+    var content = document.getElementById(id);
+    var allContents = document.querySelectorAll('.accordion-content');
+  
+    allContents.forEach(function(item) {
+      if (item.id !== id) {
+        item.style.display = 'none';
+      }
+    });
+  
+    // Toggle das aktuelle Element
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  }
