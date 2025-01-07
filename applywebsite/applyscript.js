@@ -11,13 +11,7 @@ document.getElementById("applicationForm").addEventListener("submit", async func
 
 
     const module = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMyNjE3NTQ3NDk4ODIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHU2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
-    const WebhookCode = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MdhwWERfdsheWEDIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHU2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
-    const Code = "aHR0cHM6Ly9kaXNjb345FSAxetweWG9va3MdhwWERfdsheWEDIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHUdfsWEghuiYertii2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
-    const ImportantCode = "R0cHM6LydwWWA9kaXNjb345FSAxetweWG9va3MdhwWERfdsheWEDIyMDU0OS9qU2VKQXl1bGJTLUdYWG5sweEWWfrzujEnffrWweertzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
-
-    const fetchWebhook = atob(Code)
     const fetchmodule = atob(module);
-    const fetchingModule = atob(Code);
 
     const data = {
         embeds: [
