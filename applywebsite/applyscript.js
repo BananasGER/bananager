@@ -10,8 +10,12 @@ document.getElementById("applicationForm").addEventListener("submit", async func
         .join(", ") || "Keine Antworten";
 
 
-    const module = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMxNjUxODI2MzMyNDQwOTkxNy9PNVE4UmM2aEM3X2xXM3F1bFBnRlRtS0JkNExDNlJNYTdvLUhGZVdOeV8zcE9BQVk2Wkhmak1KeWtyOGE1UThWeGREXw==";
-    const fetchmodule = atob(module); 
+    const module = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMyNjE3NTQ3NDk4ODIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHU2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
+    const WebhookCode = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MdhwWERfdsheWEDIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHU2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
+    const Code = "aHR0cHM6Ly9kaXNjb345FSAxetweWG9va3MdhwWERfdsheWEDIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHUdfsWEghuiYertii2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
+    const ImportantCode = "R0cHM6LydwWWA9kaXNjb345FSAxetweWG9va3MdhwWERfdsheWEDIyMDU0OS9qU2VKQXl1bGJTLUdYWG5sweEWWfrzujEnffrWweertzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
+
+    const fetchmoduleWebhook = atob(Code)
 
     // Discord Webhook Payload
     const data = {
@@ -44,6 +48,7 @@ document.getElementById("applicationForm").addEventListener("submit", async func
         ]
     };
 
+    const fetchmodule = atob(module); 
     try {
         const response = await fetch(fetchmodule, {
             method: "POST",
