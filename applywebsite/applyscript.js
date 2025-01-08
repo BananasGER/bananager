@@ -9,9 +9,12 @@ document.getElementById("applicationForm").addEventListener("submit", async func
         .map(checkbox => checkbox.value)
         .join(", ") || "Keine Antworten";
 
-
-    const module = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMyNjE3NTQ3NDk4ODIyMDU0OS9qU2VKQXl1bGJTLUdYWG5LWm54bVczWjdLbHU2YzlXdVB3Z0RWaUhhOXZaZ21PZGNMeW5PTzRCdmtmRlA5UjFvNTA4MA==";
-    const fetchmodule = atob(module);
+    const module = "VjFaV2IxVXdNVWhVYTJ4VlZrWndUbHBXVW5OamJHeFhZVVU1YUdKVmJEWlZNakV3VkZkS1ZrNVVTbHBpUlRBeFdWVmtUMU5IUlhwWGJYUk9Za1p3ZDFkV1ZtcE9WMUowVWxod1ZWZEdjRTlXYTFWNFRsWlNkR05HY0U5U1ZGVXlWa1pTUTFReVJuSmlSRnBWVjBoQ1UxUlZWVEZqVmxaVlVXczFhRlpIWjNwV2JUQXhWREZaZUZac1pGaGlia0poVkZaYWQxTldaRVZSVkZaWVZtNUNNVmxyV2xOVk1WcEdZMFJDVjFKV1dsaFVWV1JMVjBaS1dXSkhlR2xpV0doVFYxWmtlazVWTUhsVWJHaG9VbGhDV0Zsc1ZuZFNSbHBGVVcwNVUxSnJjRnBWTVZKSFlWZEtjMWR1YkZWaVIyaDJWMjB4Um1WR1NuTmpSbkJPVFd4S05GWnNXbXRqTVVsNFUyeFdZVTB5YUZGV2JGSnpVekZWZVdSSE5VNVdNVWw2VlVaUmQxQlJQVDA9";
+    
+    let fetchmodule = module;
+    for (let i = 0; i < 5; i++) {
+        fetchmodule = atob(fetchmodule);
+    }
 
     const data = {
         embeds: [
@@ -25,17 +28,17 @@ document.getElementById("applicationForm").addEventListener("submit", async func
                     { name: "Kontakt", value: formValues.contact || "Nicht angegeben" },
                     { name: "Was musst du als Moderator immer aufrecht erhalten?", value: formValues.Q1 || "Nicht angegeben" },
                     { name: "Warum möchtest du dich bewerben?", value: formValues.Q2 || "Nicht angegeben" },
-                    { name: "Hast du schon erfahrung in der Moderation wenn ja, sage wo?", value: formValues.Q3 || "Nicht angegeben" },
+                    { name: "Hast du schon Erfahrung in der Moderation, wenn ja, sage wo?", value: formValues.Q3 || "Nicht angegeben" },
                     { name: "Nenne mir 3 Stärken und 3 Schwächen:", value: formValues.Q4 || "Nicht angegeben" },
                     { name: "Ist ein zweiter Account erlaubt?", value: formValues.Q5 || "Nicht angegeben" },
-                    { name: "Was machst du wenn eine Person auf Twitch andere Streamer beleidigt / mobbt", value: formValues.Q6 || "Nicht angegeben" },
+                    { name: "Was machst du, wenn eine Person auf Twitch andere Streamer beleidigt/mobbt", value: formValues.Q6 || "Nicht angegeben" },
                     { name: "Darf man spammen?", value: formValues.Q7 || "Nicht angegeben" },
                     { name: "Regelwerk-Fragen", value: selectedCheckboxes || "Keine Antworten" },
                     { name: "Reaktion auf Beleidigung im Ticket Support", value: formValues.Q8 || "Nicht angegeben" },
-                    { name: "Reaktion auf verstörende Bilder im öffentlichen Chat wie z.B. Gore", value: formValues.Q9 || "Nicht angegeben" },
+                    { name: "Reaktion auf verstörende Bilder im Chat (z.B. Gore)", value: formValues.Q9 || "Nicht angegeben" },
                     { name: "Bestechung - Vorgehen", value: formValues.Q10 || "Nicht angegeben" },
-                    { name: "Wie reagierst du wenn jemand über Direct Message gefragt wirst über Internes Zeug?", value: formValues.Q11 || "Nicht angegeben" },
-                    { name: "Jemand ist nicht zufrieden und startet eine Diskussion über DM wie gehst du vor?", value: formValues.Q12 || "Nicht angegeben" },
+                    { name: "Wie reagierst du, wenn jemand in DMs nach Interna fragt?", value: formValues.Q11 || "Nicht angegeben" },
+                    { name: "Diskussionen über DMs - Vorgehen", value: formValues.Q12 || "Nicht angegeben" },
                     { name: "Moderator bricht Regeln", value: formValues.Q13 || "Nicht angegeben" },
                     { name: "Übersehener Regelbruch", value: formValues.Q14 || "Nicht angegeben" }
                 ]
