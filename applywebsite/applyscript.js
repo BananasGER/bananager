@@ -1,6 +1,8 @@
 document.getElementById("applicationForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
+    //
+
     const formData = new FormData(e.target);
     const formValues = Object.fromEntries(formData.entries());
 
