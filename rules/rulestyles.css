@@ -88,3 +88,33 @@ h1 {
     max-height: 10000px; /* Groß genug, um den Inhalt zu zeigen */
     opacity: 1;
 }
+
+.language-box {
+    display: none;
+}
+
+.language-box.active {
+    display: block;
+}
+
+#translate-button {
+    background-color: #1e90ff; /* Blaues Farbschema */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#translate-button:hover {
+    background-color: #63a4ff; /* Helleres Blau bei Hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#translate-button:active {
+    background-color: #0d6efd; /* Dunkleres Blau beim Klicken */
+    transform: scale(0.95);
+}
