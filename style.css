@@ -520,6 +520,21 @@ footer {
     color: #ddd;
   }
 
+#CDMDez2024 {
+    border: 4px solid #ffd700; /* Goldene Outline */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Weicher Gold-Schimmer */
+    padding: 5px; /* Abstand für die Outline */
+    background: rgba(0, 0, 0, 0.5); /* Leicht dunkler Hintergrund */
+}
+
+#CDMDez2024:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    transform: scale(1.02); /* Leichtes Vergrößern */
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 
 
