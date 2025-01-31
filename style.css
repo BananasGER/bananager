@@ -470,24 +470,24 @@ footer {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Damit die Benachrichtigung oben bleibt */
-    max-width: 400px; /* Maximalbreite der Benachrichtigung */
+    z-index: 1000; 
+    max-width: 400px; 
 }
 
 .notification.show {
-    display: block; /* Benachrichtigung sichtbar machen */
+    display: block; 
 }
 
 /* Stil für den Text */
 #notification-message {
     margin: 0;
-    white-space: pre-line; /* Zeilenumbrüche im Text erlauben */
+    white-space: pre-line; 
 }
 
 .accordion {
     display: flex;
-    flex-direction: column;  /* Gruppen untereinander */
-    align-items: center;     /* Zentriert die Gruppen horizontal */
+    flex-direction: column; 
+    align-items: center; 
   }
   
   .accordion-item {
@@ -520,18 +520,65 @@ footer {
     color: #ddd;
   }
 
-#CDMDez2024 {
-    border: 4px solid #ffd700; /* Goldene Outline */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Weicher Gold-Schimmer */
-    padding: 5px; /* Abstand für die Outline */
-    background: rgba(0, 0, 0, 0.5); /* Leicht dunkler Hintergrund */
+  #CDMDez2024 {
+    border: 4px solid #ffd700; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    padding: 5px; 
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 #CDMDez2024:hover {
     box-shadow: 0 0 20px rgba(255, 215, 0, 1);
-    transform: scale(1.02); /* Leichtes Vergrößern */
+    transform: scale(1.02); 
     transition: all 0.3s ease-in-out;
+}
+
+
+#CDMCurrent:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+#CDMCurrent {
+    border: 4px solid #ffd700; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); 
+    padding: 5px; 
+    background: rgba(0, 0, 0, 0.5); 
+    position: relative;
+}
+
+
+#CDMCurrent::before {
+    content: "👑";
+    font-size: 30px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.video-container::before {
+    content: "👑";
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 1);
 }
 
 
