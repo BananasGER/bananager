@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>📩 Beschwerdeformular</title>
+    <link rel="stylesheet" href="beschwerdestyle.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://bananasger.github.io/bananager/">← Zurück zur Seite</a>
+    </div>
+
+    <div class="form-container">
+        <h2>📩 Beschwerdeformular</h2>
+
+        <label>Discord Name *</label>
+        <input type="text" id="discordName" required>
+
+        <label>Echter Name (optional)</label>
+        <input type="text" id="realName">
+
+        <label>Teammitglied auswählen *</label>
+        <select id="teamMember" required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Admin | Darkgamer_66</option>
+            <option>Secretary | Silbermacher</option>
+            <option>Mod | Spinplay</option>
+        </select>
+
+        <label>Beschwerde *</label>
+        <textarea id="complaint" placeholder="Beschreibe hier genau, was passiert ist..." required></textarea>
+
+        <label>Beweis-Link (z.B. Screenshot, Video, Datei) (optional) | Benutze z.B. Imgur</label>
+        <input type="url" id="evidenceLink" placeholder="Füge hier einen Link ein (wenn vorhanden)">
+
+        <label>Informationen</label>
+        <div class="info-box">
+            <p>
+                Deine Privatsphäre ist uns sehr wichtig. Alle Informationen, die du in diesen Feldern eingibst und absendest, werden nur von BananaGER persönlich eingesehen. Deine Beschwerde sowie alle damit verbundenen Daten werden nicht an Dritte, dem betroffenen Moderator oder für andere Zwecke verwendet.<br><br>
+                Beweise, wie Screenshorts, Videos oder sonstige Dateien, die du als Link bereitstellst, werden sicher auf Bananas Computer gespeichert. Diese Daten werden über einen längeren Zeitraum aufbewahrt, um sie im Falle eines möglichen Widerspruchs oder zur Klärung der Situation als Nachweis nutzen zu können. <br><br>
+                Banana behandelt deine Daten mit größter Sorgfalt und entsprechend den geltenden Datenschutzbestimmungen, um deine Rechte zu schützen und eine faire Bearbeitung deiner Beschwerde zu gewährleisten. <br><br>
+                Falls du Fragen zum Datenschutz oder zur Datenverarbeitung hast, kannst du dich jederzeit an BananaGER wenden auf dem Discord.
+            </p>
+        </div>
+
+        <label>Zustimmung *</label>
+        <select id="consent" required>
+            <option disabled selected>Bitte auswählen</option>
+            <option>Ich habe es gelesen und stimme zu</option>
+        </select>
+
+        <label>Plattform *</label>
+        <select id="platform" required>
+            <option disabled selected>Plattform auswählen</option>
+            <option>Twitch</option>
+            <option>YouTube</option>
+            <option>Discord</option>
+            <option>Direct Message</option>
+            <option>Sonstige</option>
+        </select>
+
+        <button onclick="submitComplaint()">Absenden</button>
+    </div>
+
+    <script src="beschwerdescript.js"></script>
+</body>
+</html>
