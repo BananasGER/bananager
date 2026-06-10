@@ -17,21 +17,21 @@
         <ul>
             <li><a href="#" onclick="showPage('home')">Startseite</a></li>
             <li><a href="#" onclick="showPage('about')">Über mich</a></li>
-            <li><a href="#" onclick="showPage('teammembers')">Teammitglieder</a></li>
-	    <li><a href="beschwerde/beschwerde.html">Beschwerde</a></li>
             <li><a href="#" onClick="showPage('bewerben')">Bewerben</a></li>
-            <li><a href="#" onClick="showPage('contact')">Kontakt</a></li>
+            <li><a href="#" onclick="showPage('teammembers')">Teammitglieder</a></li>
+	        <li><a href="beschwerde/beschwerde.html">Beschwerde</a></li>
             <li><a href="#" onClick="showPage('cdm')">Clip des Monats</a></li>
             <li><a href="rules/rulesnew.html">Regelwerke</a></li>
+            <li><a href="#" onClick="showPage('contact')">Kontakt</a></li>
         </ul>
     </nav>
 
     <!--NOTIFICATION-->
 
     
-<!--     <div id="notification" class="notification">
-        <span id="notification-message"><p class="notificationTitle">WICHTIGE INFORMATION</p><br><p class="notificationDesc"> Aufgrund das BananaGER in der Abschluss Klasse ist, kann es zu Stream änderungen kommen ohne Warnungen!</p></span>
-    </div> -->
+     <div id="notification" class="notification">
+        <span id="notification-message"><p class="notificationTitle">Alles auf Schwarz & Weiß</p><br><p class="notificationDesc"> Es gibt bald eine riesige änderung!🤫 Schaltet zum Event ein am 14.06.2026 um 16:00 auf Twitch!🤩</p></span>
+    </div>
 
     <!---->
 
@@ -45,7 +45,7 @@
         <div id="youtubeVid">
             <br>
             <h1 class="titleVid">Das neuste YouTube Video</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_T1fuZ-XkD8?si=WBC9-NYMu9y5YFlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9PZ_q3cbBmA?si=wz0LJ5LdvlqT24iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <br>
@@ -121,7 +121,7 @@
             <br>
             <div class="overview">
                 <img src="pictures\logo.png" alt="BananaGER Logo" class="bananalogo"> <!-- Das Bild links ausrichten -->
-                <p class="aboutMeDesc">Hi, ich bin Banana (Leon) und 16 Jahre alt. Ich bin dafür bekannt, viele Horror Games zu spielen wie auch zu Streamen auf Twitch. Ich liebe es für euch Videos zu machen oder auch zu Streamen. Ich bin immer sehr offen für fragen und vielleicht auch manchmal Aggressiv in meinen Streams. Ich hoffe ihr habt hier eine gute Zeit!</p>
+                <p class="aboutMeDesc">Hi, ich bin Banana (Leon) und 17 Jahre alt. Ich bin dafür bekannt, viele Horror Games zu spielen wie auch zu Streamen auf Twitch. Ich liebe es für euch Videos zu machen oder auch zu Streamen. Ich bin immer sehr offen für fragen und vielleicht auch manchmal Aggressiv in meinen Streams. Ich hoffe ihr habt hier eine gute Zeit!</p>
             </div>
 
             <br>
@@ -300,6 +300,10 @@
 
     <br>
     <br>
+    <p class="discord-name">E-Mail: <strong>bananasgerttv@outlook.com</strong></p>
+
+    <br>
+    <br>
     <br>
     <br>
 
@@ -321,17 +325,27 @@
 
 <div id="cdm" class="page" style="display: none;">
     <header>
-        <h1>Clip des Monats Juni 2025</h1>
+        <h1>Clip des Monats Mai 2026</h1>
         <br>
         <div class="video-container">
         <video id="CDMCurrent" width="800" controls>
-            <source src="pictures\ClipJune2025.mp4" type="video/mp4">
+            <source src="pictures\ClipMay2026.mp4" type="video/mp4">
             Dein Browser unterstützt dieses Video-Format nicht.
           </video>
           </div>
 <br>
 <br>
         <div class="accordion">
+
+			<div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion('video7')">Clip des Monats Mai 2026</button>
+              <div class="accordion-content" id="video6">
+			<video id="CDMDez2024" width="640" height="360" controls>
+            <source src="pictures\ClipMay2026.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+              </div>
+            </div>
 
 			<div class="accordion-item">
               <button class="accordion-header" onclick="toggleAccordion('video6')">Clip des Monats Juni 2025</button>
@@ -420,7 +434,7 @@
 
     <!--Footer-->
 
-    <footer>Copyright © 2024-2025 by BananaGER all right reserved</footer>
+    <footer>Copyright © 2024-2026 by BananaGER all right reserved</footer>
     
 
     <script src="script.js"></script>
